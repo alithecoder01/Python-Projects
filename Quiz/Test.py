@@ -17,11 +17,12 @@ qList = [
 
 def runn (ques):
     score =0
-    for ques in qList:
-        answer = input(ques.question)
-        if answer == ques.answer:
+    for quess in ques:
+        answer = input(quess.question)
+        if answer == quess.answer:
             score+=1
     print("\n Your score is "+ str(score)+ "/" + str(len(questionsAnswers)))  
 
-runn(questions)
+runn(qList)
+
 
